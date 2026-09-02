@@ -1,0 +1,9 @@
+ipykernel
+numpy
+pandas
+openpyxl
+python-docx
+pypdf
+pymupdf
+pygame
+opencv-python
