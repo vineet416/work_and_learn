@@ -1,0 +1,6 @@
+Deposit: Account 1003, Amount: 18000.0, Status: successful
+Withdrawal: Account 1002, Amount: 7000.0, Status: successful
+Transfer: Account 1003, To Account: 1001, Amount: 12000.0, Status: successful
+Deposit: Account 1002, Amount: 5000.0, Status: successful
+Withdrawal: Account 1002, Amount: 5000.0, Status: successful
+Transfer: Account 1002, To Account: 1001, Amount: 5000.0, Status: successful

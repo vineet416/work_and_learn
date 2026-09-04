@@ -1,0 +1,46 @@
+[2026-08-26 10:16:02,576] 28 root - INFO - Banking application started.
+[2026-08-26 10:16:21,118] 5 root - INFO - Validating account number: 103
+[2026-08-26 10:16:21,118] 10 root - ERROR - Account number must be a 4-digit number.
+[2026-08-26 10:16:45,052] 5 root - INFO - Validating account number: 1003
+[2026-08-26 10:16:45,052] 21 root - INFO - Validating deposit amount: 18000.0
+[2026-08-26 10:16:45,052] 6 root - INFO - Depositing 18000.0 to account 1003.
+[2026-08-26 10:16:45,052] 9 root - INFO - Deposit successful. New balance: 36000.0
+[2026-08-26 10:17:21,935] 5 root - INFO - Validating account number: 1002
+[2026-08-26 10:17:21,935] 32 root - INFO - Validating withdrawal amount: 7000.0
+[2026-08-26 10:17:21,935] 24 root - INFO - Withdrawing 7000.0 from account 1002.
+[2026-08-26 10:17:21,935] 28 root - INFO - Withdrawal successful. New balance: 38000.0
+[2026-08-26 10:17:43,453] 5 root - INFO - Validating account number: 1003
+[2026-08-26 10:17:43,453] 5 root - INFO - Validating account number: 1001
+[2026-08-26 10:17:43,453] 21 root - INFO - Validating deposit amount: 12000.0
+[2026-08-26 10:17:43,453] 32 root - INFO - Validating withdrawal amount: 12000.0
+[2026-08-26 10:17:43,453] 46 root - INFO - Transferring 12000.0 from account 1003 to account 1001.
+[2026-08-26 10:17:43,453] 51 root - INFO - Transfer successful. New balance for 1003: 24000.0, for 1001: 24000.0
+[2026-08-26 10:17:49,730] 26 root - INFO - Fetching all account details.
+[2026-08-26 10:17:49,730] 34 root - INFO - Total accounts fetched: 3
+[2026-08-26 10:18:01,849] 53 root - INFO - Finding the richest customer.
+[2026-08-26 10:18:01,849] 55 root - INFO - Richest customer found: Rohit Sharma with balance 38000.0
+[2026-08-26 10:19:27,945] 101 root - INFO - Exiting the banking application.
+[2026-08-26 10:19:31,684] 28 root - INFO - Banking application started.
+[2026-08-26 10:19:33,280] 26 root - INFO - Fetching all account details.
+[2026-08-26 10:19:33,280] 34 root - INFO - Total accounts fetched: 3
+[2026-08-26 10:19:57,306] 5 root - INFO - Validating account number: 1002
+[2026-08-26 10:19:57,306] 21 root - INFO - Validating deposit amount: 5000.0
+[2026-08-26 10:19:57,306] 6 root - INFO - Depositing 5000.0 to account 1002.
+[2026-08-26 10:19:57,306] 9 root - INFO - Deposit successful. New balance: 50000.0
+[2026-08-26 10:20:00,000] 26 root - INFO - Fetching all account details.
+[2026-08-26 10:20:00,000] 34 root - INFO - Total accounts fetched: 3
+[2026-08-26 10:20:22,724] 5 root - INFO - Validating account number: 1002
+[2026-08-26 10:20:22,724] 32 root - INFO - Validating withdrawal amount: 5000.0
+[2026-08-26 10:20:22,724] 24 root - INFO - Withdrawing 5000.0 from account 1002.
+[2026-08-26 10:20:22,724] 28 root - INFO - Withdrawal successful. New balance: 45000.0
+[2026-08-26 10:20:26,430] 26 root - INFO - Fetching all account details.
+[2026-08-26 10:20:26,430] 34 root - INFO - Total accounts fetched: 3
+[2026-08-26 10:20:48,563] 5 root - INFO - Validating account number: 1002
+[2026-08-26 10:20:48,563] 5 root - INFO - Validating account number: 1001
+[2026-08-26 10:20:48,563] 21 root - INFO - Validating deposit amount: 5000.0
+[2026-08-26 10:20:48,563] 32 root - INFO - Validating withdrawal amount: 5000.0
+[2026-08-26 10:20:48,563] 46 root - INFO - Transferring 5000.0 from account 1002 to account 1001.
+[2026-08-26 10:20:48,563] 51 root - INFO - Transfer successful. New balance for 1002: 40000.0, for 1001: 17000.0
+[2026-08-26 10:20:51,872] 26 root - INFO - Fetching all account details.
+[2026-08-26 10:20:51,872] 34 root - INFO - Total accounts fetched: 3
+[2026-08-26 10:21:06,417] 101 root - INFO - Exiting the banking application.
