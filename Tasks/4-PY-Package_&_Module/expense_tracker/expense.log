@@ -1,0 +1,17 @@
+[2026-09-04 19:46:40,665] 9 root - INFO - Starting Expense Tracker Application
+[2026-09-04 19:46:51,869] 6 root - INFO - Validating user input: 4
+[2026-09-04 19:46:51,869] 8 root - INFO - User input is valid.
+[2026-09-04 19:46:51,869] 66 root - INFO - Retrieving all expenses
+[2026-09-04 19:46:51,869] 70 root - INFO - Expenses retrieved successfully
+[2026-09-04 19:47:00,737] 28 root - WARNING - Non-integer value entered for choice.
+[2026-09-04 19:47:07,500] 6 root - INFO - Validating user input: 5
+[2026-09-04 19:47:07,500] 8 root - INFO - User input is valid.
+[2026-09-04 19:47:16,676] 16 root - INFO - Validating expense ID: 2
+[2026-09-04 19:47:16,676] 18 root - INFO - Expense ID is valid.
+[2026-09-04 19:47:16,676] 15 root - INFO - Searching for expense with ID: 2
+[2026-09-04 19:47:16,676] 66 root - INFO - Retrieving all expenses
+[2026-09-04 19:47:16,676] 70 root - INFO - Expenses retrieved successfully
+[2026-09-04 19:47:16,676] 28 root - INFO - Expense found: ['2', '2026-08-25', '500.00', 'Travel', 'Bus pass']
+[2026-09-04 19:47:25,305] 6 root - INFO - Validating user input: 9
+[2026-09-04 19:47:25,305] 8 root - INFO - User input is valid.
+[2026-09-04 19:47:25,305] 87 root - INFO - Exiting Expense Tracker Application
