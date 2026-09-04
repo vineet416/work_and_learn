@@ -1,0 +1,39 @@
+[2026-08-25 12:44:46,024] 48 root - INFO - User selected option: 7
+[2026-08-25 12:44:46,024] 60 root - INFO - Listing all books
+[2026-08-25 12:44:46,024] 66 root - INFO - Books listed successfully
+[2026-08-25 12:44:55,797] 48 root - INFO - User selected option: 5
+[2026-08-25 12:44:58,072] 94 root - INFO - User selected borrow option: 1
+[2026-08-25 12:44:59,594] 7 root - INFO - Attempting to borrow book with ID: 101
+[2026-08-25 12:44:59,594] 13 root - INFO - Book borrowed successfully: {'id': 101, 'title': 'Python Crash Course', 'author': 'Eric Matthes', 'available': False}
+[2026-08-25 12:45:01,413] 48 root - INFO - User selected option: 5
+[2026-08-25 12:45:04,956] 94 root - INFO - User selected borrow option: 1
+[2026-08-25 12:45:06,500] 7 root - INFO - Attempting to borrow book with ID: 103
+[2026-08-25 12:45:06,500] 13 root - INFO - Book borrowed successfully: {'id': 103, 'title': 'Fluent Python', 'author': 'Luciano Ramalho', 'available': False}
+[2026-08-25 12:45:13,241] 48 root - INFO - User selected option: 7
+[2026-08-25 12:45:13,241] 60 root - INFO - Listing all books
+[2026-08-25 12:45:13,241] 66 root - INFO - Books listed successfully
+[2026-08-25 12:45:15,474] 48 root - INFO - User selected option: 8
+[2026-08-25 12:45:15,474] 80 root - INFO - Listing all available books
+[2026-08-25 12:45:15,474] 87 root - INFO - Available books listed successfully
+[2026-08-25 12:45:20,123] 48 root - INFO - User selected option: 9
+[2026-08-25 12:45:20,123] 5 root - INFO - Viewing borrowing history
+[2026-08-25 12:45:20,123] 9 root - INFO - Borrowing history retrieved successfully
+[2026-08-25 12:45:23,522] 48 root - INFO - User selected option: 6
+[2026-08-25 12:45:24,750] 109 root - INFO - User selected return option: 1
+[2026-08-25 12:45:26,410] 53 root - INFO - Attempting to return book with ID: 101
+[2026-08-25 12:45:26,410] 59 root - INFO - Book returned successfully: {'id': 101, 'title': 'Python Crash Course', 'author': 'Eric Matthes', 'available': True}
+[2026-08-25 12:45:28,572] 48 root - INFO - User selected option: 6
+[2026-08-25 12:45:30,503] 109 root - INFO - User selected return option: 1
+[2026-08-25 12:45:33,343] 53 root - INFO - Attempting to return book with ID: 103
+[2026-08-25 12:45:33,343] 59 root - INFO - Book returned successfully: {'id': 103, 'title': 'Fluent Python', 'author': 'Luciano Ramalho', 'available': True}
+[2026-08-25 12:45:36,077] 48 root - INFO - User selected option: 9
+[2026-08-25 12:45:36,077] 5 root - INFO - Viewing borrowing history
+[2026-08-25 12:45:36,077] 9 root - INFO - Borrowing history retrieved successfully
+[2026-08-25 12:45:47,918] 48 root - INFO - User selected option: 9
+[2026-08-25 12:45:47,920] 5 root - INFO - Viewing borrowing history
+[2026-08-25 12:45:47,920] 9 root - INFO - Borrowing history retrieved successfully
+[2026-08-25 12:45:57,396] 48 root - INFO - User selected option: 8
+[2026-08-25 12:45:57,400] 80 root - INFO - Listing all available books
+[2026-08-25 12:45:57,400] 87 root - INFO - Available books listed successfully
+[2026-08-25 12:46:07,386] 48 root - INFO - User selected option: 0
+[2026-08-25 12:46:07,386] 135 root - INFO - Exiting the Library Management System.

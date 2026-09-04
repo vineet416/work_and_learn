@@ -1,0 +1,4 @@
+User borrowed book 'Python Crash Course' (ID: 101)
+User borrowed book 'Fluent Python' (ID: 103)
+User returned book 'Python Crash Course' (ID: 101)
+User returned book 'Fluent Python' (ID: 103)
