@@ -7,3 +7,4 @@ pypdf
 pymupdf
 pygame
 opencv-python
+fastapi
