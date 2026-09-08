@@ -1,0 +1,7 @@
+WARNING - Memory usage high
+WARNING - Disk space running low
+WARNING - API response time high
+WARNING - CPU usage high
+WARNING - Report generation slow
+WARNING - Database query slow
+WARNING - Backup storage almost full

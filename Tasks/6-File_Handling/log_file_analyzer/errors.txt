@@ -1,0 +1,8 @@
+ERROR - Database connection failed
+ERROR - Payment service unavailable
+ERROR - API request failed
+ERROR - Authentication service failed
+ERROR - Email service unavailable
+ERROR - Database query timeout
+ERROR - File upload failed
+ERROR - External API unavailable
