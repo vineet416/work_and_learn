@@ -1,0 +1,15 @@
+name,course
+Sudhanshu,Python
+Rahul,Data Science
+Ananya,Machine Learning
+Vikram,Python
+Neha,Data Science
+Amit,Web Development
+Priya,Python
+Karan,Machine Learning
+Meera,Data Science
+Rohan,Web Development
+Sneha,Python
+Aditya,Data Science
+Arjun,Python
+Isha,Data Science
