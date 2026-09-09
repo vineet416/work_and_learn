@@ -1,0 +1,113 @@
+customer_id,name,age,city,email,purchase_amount,rating
+C001,  rahul sharma  ,25, pune,RAHUL@EMAIL.COM,1500,4.5
+C002,PRIYA PATEL,22,MUMBAI, priya@email.com ,2200,4
+C003,  Amit Shah,twenty,Ahmedabad,amit@email.com,1800,4.2
+C004,Neha Mehta,28,  delhi  ,neha@email.com,,4.7
+C005,rohit verma,30,PUNE,rohit@email.com,2500,
+C006, Sneha Iyer ,27,bengaluru,sneha@email.com,1950,4.1
+C007,ARJUN REDDY,35, Hyderabad,arjun@email.com,3100,5
+C008,  Kavya Nair,24,KOCHI,kavya@email.com,1750,3.8
+C009,mohit kumar,29, jaipur,mohit@email.com,2100,4.0
+C010,Ananya Joshi,26,Chandigarh,ananya@email.com,2300,4.6
+C010,Ananya Joshi,26,Chandigarh,ananya@email.com,2300,4.6
+C011,  Vikram Singh,thirty-one,Delhi ,vikram@email.com,2800,4.3
+C012,isha gupta,23, Lucknow ,isha@email.com,1600,3.9
+C013,RAMESH KUMAR,40,Patna,ramesh@email.com,"2,200",4.4
+C014,Meera Rao,32,HYDERABAD,meera@email.com,2750,five
+C015,  Karan Malhotra  ,38, Bombay ,karan@email.com,3400,4.8
+C016,Divya Menon,twenty-five,Chennai,divya@email.com,1900,4.0
+C017,akash singh,21,  delhi,akash@email.com,1450,3.5
+C018,POOJA DESAI,34,Pune,pooja@email.com,2600,4.6
+C019,  Nitin Jain,27, surat,nitin@email.com,2050,4.1
+C020,Sonal Kapoor,30,Jaipur,sonal@email.com,2250,4.2
+C021,manish yadav,33,Noida,manish@email.com,3000,4.7
+C022, Riya Bose,24,KOLKATA,riya@email.com,1750,3.7
+C023,ABHISHEK DAS,29, Kolkata,abhishek@email.com,2400,4.5
+C024,  Tanvi Kulkarni,26,Nashik,tanvi@email.com,1550,4.0
+C025,Sameer Khan,31, Bhopal ,sameer@email.com,2150,4.3
+C025,Sameer Khan,31, Bhopal ,sameer@email.com,2150,4.3
+C026,  Nisha Arora,28,Delhi,nisha@email.com,2700,4.9
+C027,Vivek Mishra,thirty-six,Kanpur,vivek@email.com,1850,3.6
+C028,simran kaur,22, AMRITSAR,simran@email.com,1200,4.1
+C029,GAURAV SHARMA,37,Gurgaon,gaurav@email.com,3200,4.4
+C030,  Aditi Sen  ,25,Kolkata,aditi@email.com,,4.8
+C031,Harsh Vora,30,Ahmedabad,harsh@email.com,2350,4.0
+C032,pooja rani,27, Patna ,pooja.rani@email.com,2050,3.9
+C033,RAJIV KHANNA,42,Delhi,rajiv@email.com,4100,4.6
+C034,  Mansi Shah,23,Pune,mansi@email.com,1700,
+C035,Dev Patel,29,Ahmedabad, dev.patel@email.com ,2900,4.5
+C036,Shreya Paul,31, Kolkata,shreya@email.com,2500,4.2
+C037,rohan mehra,26, Chandigarh,rohan@email.com,1800,4.1
+C038,ANJALI NAIR,34,Kochi,anjali@email.com,3050,4.7
+C039,  Yash Thakur,twenty-eight,Shimla,yash@email.com,1400,3.8
+C040,Preeti Sinha,33, Ranchi ,preeti@email.com,2200,4.3
+C041,  Rahul Sharma  ,25, pune,RAHUL@EMAIL.COM,1500,4.5
+C042,PRIYANKA PATIL,28,MUMBAI,priyanka@email.com,2600,4.6
+C043,Imran Ali,39,Delhi,imran@email.com,3300,4.4
+C044,neelam joshi,24,Jaipur,neelam@email.com,1750,3.9
+C045,SAURABH GUPTA,35, Lucknow ,saurabh@email.com,2800,4.8
+C046,  Komal Agarwal,27,Noida,komal@email.com,2100,4.0
+C047,Manoj Tiwari,41,Varanasi,manoj@email.com,3700,4.2
+C048,riya bose,24,Kolkata,riya@email.com,1750,3.7
+C049,  Farhan Sheikh,29, Pune,farhan@email.com,2450,4.5
+C050,LAKSHMI IYER,32,Chennai,laksmi@email.com,3100,4.6
+C051,  Sandeep Roy,36, Kolkata,sandeep@email.com,2300,4.1
+C052,Kirti Bansal,twenty-three,Delhi,kirti@email.com,1650,3.8
+C053,  Omkar Jadhav,30, Nagpur ,omkar@email.com,1950,4.0
+C054,SHALINI GUPTA,26,Jaipur,shalini@email.com,2150,4.7
+C055,Adil Khan,38,Bombay,adil@email.com,2800,4.3
+C056,  Bhavna Joshi,31, Indore,bhavna@email.com,2400,
+C057,Chirag Jain,27,Surat,chirag@email.com,1850,4.4
+C058,simran kaur,22, Amritsar ,simran@email.com,1200,4.1
+C059,MOHINI RAO,34,Hyderabad,mohini@email.com,2700,4.9
+C060,  Tushar Bhat,29,Bengaluru,tushar@email.com,2250,4.2
+C061,Reena Das,25,Kolkata,reena@email.com,1550,3.6
+C062,  Ankit Verma,33, Pune,ankit@email.com,2600,4.5
+C063,VARSHA REDDY,28,Hyderabad,varsha@email.com,2950,4.8
+C064,Jayant Kulkarni,40,Nashik,jayant@email.com,3500,4.0
+C065,  Isha Gupta,23,Lucknow,isha@email.com,1600,3.9
+C066,Manish Yadav,33,Noida,manish@email.com,3000,4.7
+C067,Nandini Rao,twenty-seven,Chennai,nandini@email.com,2050,4.3
+C068,ROHIT VERMA,30,Pune,rohit@email.com,2500,4.1
+C069,  Suman Kaur  ,37, Chandigarh,suman@email.com,2750,4.6
+C070,Vikas Sethi,26,Delhi,vikas@email.com,1900,three
+C071,  Neha Mehta,28,Delhi,neha@email.com,2400,4.7
+C072,Alok Srivastava,45, Kanpur ,alok@email.com,4200,4.5
+C073,  Tina Mathew,31,Kochi,tina@email.com,,4.2
+C074,RAJAT GARG,29,Gurgaon,rajat@email.com,2800,4.4
+C075,Kajal Shah,24,Ahmedabad,kajal@email.com,1700,4.0
+C076,  Deepak Rawat,thirty-two,Dehradun,deepak@email.com,2300,3.8
+C077,Megha Singh,27, Jaipur,megha@email.com,2150,4.1
+C078,  Arvind Nair,39,Kochi,arvind@email.com,3400,4.6
+C079,Nikita Jain,22,Indore,nikita@email.com,1450,3.9
+C080,AMIT SHAH,twenty,Ahmedabad,amit@email.com,1800,4.2
+C081,  Rakesh Kumar,42,Patna,rakesh@email.com,3100,4.3
+C082,Swati Mishra,30,Lucknow,swati@email.com,2200,4.7
+C083,  Kunal Bhatia,35,Delhi,kunal@email.com,2750,4.5
+C084,Anu Thomas,26, Bengaluru,anu@email.com,1950,4.0
+C085,  Mohit Kumar,29,Jaipur,mohit@email.com,2100,4.0
+C086,Shikha Roy,33,Kolkata,shikha@email.com,2600,4.8
+C087,  Rohan Mehra,26,Chandigarh,rohan@email.com,1800,4.1
+C088,PRIYA PATEL,22,Mumbai, priya@email.com ,2200,4
+C089,  Nitin Jain,27,Surat,nitin@email.com,2050,4.1
+C090,Geeta Menon,38,Chennai,geeta@email.com,3200,4.6
+C091,  Harsh Vora,29, Ahmedabad,harsh@email.com,2900,4.5
+C092,Sapna Kapoor,34,Jaipur,sapna@email.com,2450,4.2
+C093,  Vikram Singh,31,Delhi,vikram@email.com,2800,4.3
+C094,Anjali Nair,34,KOCHI,anjali@email.com,3050,4.7
+C095,  Dev Patel,29,Ahmedabad,dev.patel@email.com,2900,4.5
+C096,Shweta Arora,25,Noida,shweta@email.com,1750,3.9
+C097,  Imran Ali,39, Delhi,imran@email.com,3300,4.4
+C098,Ritu Sharma,28,Pune,ritu@email.com,2250,4.6
+C099,  Saurabh Gupta,35,Lucknow,saurabh@email.com,2800,4.8
+C100,Meera Rao,32,Hyderabad,meera@email.com,2750,4.4
+C101,  Karan Malhotra  ,38,Bombay,karan@email.com,3400,4.8
+C102,Divya Menon,twenty-five,Chennai,divya@email.com,1900,4.0
+C103,  Akash Singh,21,Delhi,akash@email.com,1450,3.5
+C104,Pooja Desai,34,Pune,pooja@email.com,2600,4.6
+C105,  Yash Thakur,28,Shimla,yash@email.com,1400,3.8
+C106,Preeti Sinha,33,Ranchi,preeti@email.com,2200,4.3
+C107,  Lakshmi Iyer,32,Chennai,laksmi@email.com,3100,4.6
+C108,Sandeep Roy,36,Kolkata,sandeep@email.com,2300,4.1
+C109,  Bhavna Joshi,31,Indore,bhavna@email.com,2400,
+C110,Ankit Verma,33,PUNE,ankit@email.com,2600,4.5
