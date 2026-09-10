@@ -1,0 +1,11 @@
+Metric,Value
+total_tickets,60.0
+average_resolution_time,100.37
+max_resolution_time,240.0
+open_tickets,12.0
+critical_tickets,12.0
+resolved_tickets,24.0
+rahul_tickets,15.0
+neha_tickets,15.0
+amit_tickets,15.0
+priya_tickets,15.0

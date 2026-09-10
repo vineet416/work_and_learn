@@ -1,0 +1,61 @@
+ticket_id,customer_name,category,priority,status,assigned_agent,resolution_time
+T001,Aarav Sharma,Payment,High,Resolved,Rahul,45
+T002,Priya Patel,Technical,Critical,Open,Neha,120
+T003,Rohan Mehta,Login,Medium,In Progress,Amit,75
+T004,Ananya Shah,Course,Low,Closed,Priya,30
+T005,Vikram Singh,Refund,High,Resolved,Rahul,90
+T006,Neha Verma,Account,Medium,Open,Amit,150
+T007,Karan Joshi,Payment,Critical,Resolved,Neha,180
+T008,Meera Patel,Technical,High,In Progress,Priya,110
+T009,Aditya Shah,Login,Low,Closed,Rahul,25
+T010,Sneha Mehta,Course,Medium,Resolved,Amit,60
+T011,Arjun Kapoor,Refund,High,Resolved,Neha,85
+T012,Ishita Rao,Account,Critical,Open,Priya,210
+T013,Manav Gupta,Payment,Medium,In Progress,Rahul,95
+T014,Diya Nair,Technical,Low,Closed,Amit,40
+T015,Raj Malhotra,Login,High,Resolved,Neha,55
+T016,Kavya Iyer,Course,Critical,Open,Priya,165
+T017,Harsh Bansal,Refund,Medium,Resolved,Rahul,70
+T018,Simran Kaur,Account,High,In Progress,Amit,130
+T019,Yash Thakur,Payment,Low,Closed,Neha,35
+T020,Tanya Sethi,Technical,Medium,Resolved,Priya,80
+T021,Nikhil Jain,Login,Critical,Open,Rahul,200
+T022,Riya Choudhary,Course,High,Resolved,Amit,100
+T023,Dev Agarwal,Refund,Low,Closed,Neha,20
+T024,Pooja Menon,Account,Medium,In Progress,Priya,115
+T025,Sameer Kulkarni,Payment,High,Resolved,Rahul,65
+T026,Muskan Arora,Technical,Critical,Open,Amit,240
+T027,Abhinav Sinha,Login,Medium,Resolved,Neha,50
+T028,Shreya Das,Course,Low,Closed,Priya,28
+T029,Varun Reddy,Refund,High,In Progress,Rahul,140
+T030,Anjali Deshmukh,Account,Medium,Resolved,Amit,90
+T031,Suraj Yadav,Payment,Critical,Open,Neha,175
+T032,Mahi Saxena,Technical,High,Resolved,Priya,105
+T033,Ayush Tiwari,Login,Low,Closed,Rahul,22
+T034,Garima Mishra,Course,Medium,In Progress,Amit,125
+T035,Deepak Chawla,Refund,High,Resolved,Neha,88
+T036,Nandini Bose,Account,Critical,Open,Priya,190
+T037,Ritesh Kumar,Payment,Medium,Resolved,Rahul,72
+T038,Palak Jain,Technical,Low,Closed,Amit,32
+T039,Siddharth Roy,Login,High,In Progress,Neha,118
+T040,Ayesha Khan,Course,Medium,Resolved,Priya,62
+T041,Manish Kumar,Refund,Critical,Open,Rahul,225
+T042,Vaishnavi Patil,Account,High,Resolved,Amit,98
+T043,Abhishek Verma,Payment,Low,Closed,Neha,27
+T044,Sonali Dutta,Technical,Medium,In Progress,Priya,135
+T045,Chirag Shah,Login,High,Resolved,Rahul,58
+T046,Swati Ramesh,Course,Critical,Open,Amit,155
+T047,Akash Puri,Refund,Medium,Resolved,Neha,78
+T048,Reema Joshi,Account,Low,Closed,Priya,34
+T049,Ankur Sood,Payment,High,In Progress,Rahul,108
+T050,Shalini Gupta,Technical,Medium,Resolved,Amit,82
+T051,Pranav Bhat,Login,Critical,Open,Neha,205
+T052,Juhi Vyas,Course,High,Resolved,Priya,92
+T053,Omkar Sawant,Refund,Low,Closed,Rahul,24
+T054,Leena Thomas,Account,Medium,In Progress,Amit,145
+T055,Gaurav Bedi,Payment,Critical,Resolved,Neha,160
+T056,Kirti Saini,Technical,High,Open,Priya,185
+T057,Abhay Desai,Login,Medium,Resolved,Rahul,68
+T058,Monika Pillai,Course,Low,Closed,Amit,38
+T059,Raghav Arora,Refund,High,In Progress,Neha,132
+T060,Preeti Nanda,Account,Medium,Resolved,Priya,86
