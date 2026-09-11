@@ -1,0 +1,8 @@
+[2026-09-11 13:21:50,786] 23 root - INFO - Student added successfully. Student ID: 1004, Name: raina
+[2026-09-11 13:22:21,206] 43 root - INFO - Student removed successfully. Student ID: 1004, Name: raina
+[2026-09-11 13:23:06,414] 74 root - INFO - Student updated successfully. Student ID: 1001, Name: patel
+[2026-09-11 13:23:17,241] 96 root - INFO - Student found. Student ID: 1001, Name: patel
+[2026-09-11 13:23:31,119] 128 root - INFO - Displaying all students.
+[2026-09-11 13:23:56,490] 119 root - INFO - Student with ID: 1004 does not exist.
+[2026-09-11 13:24:03,419] 116 root - INFO - Student with ID: 1003 exists.
+[2026-09-11 13:24:11,010] 10 root - INFO - Students saved to file successfully.
