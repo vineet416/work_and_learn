@@ -1,0 +1,61 @@
+product_id,product_name,category,brand,price,rating,stock,discount,discount_amount,final_price
+P001,MacBook Air M3,Laptop,Apple,89999,4.8,8,10,8999.9,80999.1
+P002,Dell XPS 15,Laptop,Dell,125000,4.7,5,12,15000.0,110000.0
+P003,HP Pavilion 15,Laptop,HP,64999,4.3,15,8,5199.92,59799.08
+P004,Lenovo IdeaPad Slim 5,Laptop,Lenovo,58999,4.2,22,15,8849.85,50149.15
+P005,ASUS ROG Strix,Laptop,ASUS,145000,4.6,6,10,14500.0,130500.0
+P006,MacBook Pro 14,Laptop,Apple,169999,4.9,4,7,11899.93,158099.07
+P007,Dell Inspiron 14,Laptop,Dell,55999,4.1,19,10,5599.900000000001,50399.1
+P008,HP Envy x360,Laptop,HP,78999,4.4,11,13,10269.87,68729.13
+P009,Lenovo Legion 5,Laptop,Lenovo,114999,4.5,7,9,10349.91,104649.09
+P010,ASUS VivoBook 15,Laptop,ASUS,61999,4.2,18,14,8679.86,53319.14
+P011,iPhone 15,Mobile,Apple,69999,4.7,12,5,3499.9500000000003,66499.05
+P012,Samsung Galaxy S24,Mobile,Samsung,74999,4.6,9,8,5999.92,68999.08
+P013,OnePlus 12,Mobile,OnePlus,59999,4.5,18,10,5999.900000000001,53999.1
+P014,Google Pixel 8,Mobile,Google,65999,4.4,7,12,7919.88,58079.12
+P015,Nothing Phone 2,Mobile,Nothing,44999,4.3,25,15,6749.849999999999,38249.15
+P016,iPhone 15 Pro,Mobile,Apple,129999,4.8,6,6,7799.94,122199.06
+P017,Samsung Galaxy A55,Mobile,Samsung,39999,4.4,21,11,4399.89,35599.11
+P018,OnePlus Nord 4,Mobile,OnePlus,32999,4.5,16,9,2969.91,30029.09
+P019,Google Pixel 8a,Mobile,Google,52999,4.3,10,13,6889.87,46109.13
+P020,Samsung Galaxy Z Flip 5,Mobile,Samsung,99999,4.6,5,10,9999.900000000001,89999.1
+P021,Sony WH-1000XM5,Headphones,Sony,29999,4.8,14,15,4499.849999999999,25499.15
+P022,Apple AirPods Pro 2,Headphones,Apple,24999,4.7,20,8,1999.92,22999.08
+P023,Samsung Galaxy Buds2 Pro,Headphones,Samsung,13999,4.5,24,12,1679.8799999999999,12319.12
+P024,OnePlus Buds Pro 2,Headphones,OnePlus,11999,4.4,17,10,1199.9,10799.1
+P025,Logitech Zone Vibe 100,Headphones,Logitech,8999,4.2,13,18,1619.82,7379.18
+P026,Sony WF-1000XM5,Headphones,Sony,27999,4.6,8,9,2519.91,25479.09
+P027,Apple AirPods 3,Headphones,Apple,18999,4.6,26,7,1329.93,17669.07
+P028,Google Pixel Buds Pro,Headphones,Google,17999,4.3,12,14,2519.86,15479.14
+P029,Logitech K380,Keyboard,Logitech,2999,4.5,35,20,599.8000000000001,2399.2
+P030,Keychron K2,Keyboard,Keychron,7499,4.7,16,12,899.88,6599.12
+P031,Apple Magic Keyboard,Keyboard,Apple,10999,4.4,10,8,879.9200000000001,10119.08
+P032,ASUS TUF Gaming K3,Keyboard,ASUS,5999,4.3,18,15,899.85,5099.15
+P033,HP Wireless Keyboard,Keyboard,HP,2499,4.1,29,18,449.82,2049.18
+P034,Logitech G Pro X Keyboard,Keyboard,Logitech,12999,4.6,9,10,1299.9,11699.1
+P035,Dell Premier Keyboard,Keyboard,Dell,4999,4.2,14,13,649.87,4349.13
+P036,Lenovo Professional Keyboard,Keyboard,Lenovo,3499,4.3,22,16,559.84,2939.16
+P037,Dell UltraSharp U2723QE,Monitor,Dell,54999,4.7,6,11,6049.89,48949.11
+P038,LG UltraGear 27GN800,Monitor,LG,32999,4.6,11,14,4619.860000000001,28379.14
+P039,Samsung Odyssey G5,Monitor,Samsung,28999,4.5,8,16,4639.84,24359.16
+P040,ASUS ProArt PA278QV,Monitor,ASUS,37999,4.4,7,9,3419.91,34579.09
+P041,HP M27fq,Monitor,HP,21999,4.2,15,18,3959.8199999999997,18039.18
+P042,Lenovo ThinkVision T24i,Monitor,Lenovo,19999,4.3,13,12,2399.88,17599.12
+P043,Apple Studio Display,Monitor,Apple,159999,4.8,3,5,7999.950000000001,151999.05
+P044,Samsung Smart Monitor M8,Monitor,Samsung,56999,4.5,5,10,5699.900000000001,51299.1
+P045,Apple iPad Air,Tablet,Apple,59999,4.7,9,7,4199.93,55799.07
+P046,Samsung Galaxy Tab S9,Tablet,Samsung,74999,4.6,8,12,8999.88,65999.12
+P047,OnePlus Pad 2,Tablet,OnePlus,39999,4.5,14,10,3999.9,35999.1
+P048,Lenovo Tab P12,Tablet,Lenovo,29999,4.3,19,15,4499.849999999999,25499.15
+P049,Google Pixel Tablet,Tablet,Google,67999,4.4,6,9,6119.91,61879.09
+P050,ASUS ROG Flow Z13,Tablet,ASUS,139999,4.5,4,8,11199.92,128799.08
+P051,Apple iPad 10th Gen,Tablet,Apple,38999,4.6,17,11,4289.89,34709.11
+P052,Samsung Galaxy Tab A9,Tablet,Samsung,17999,4.2,28,16,2879.84,15119.16
+P053,Logitech MX Master 3S,Accessories,Logitech,8999,4.8,21,14,1259.8600000000001,7739.139999999999
+P054,Apple MagSafe Charger,Accessories,Apple,4499,4.5,30,10,449.90000000000003,4049.1
+P055,Samsung 25W Charger,Accessories,Samsung,1499,4.4,42,20,299.8,1199.2
+P056,OnePlus Power Bank,Accessories,OnePlus,1999,4.3,27,18,359.82,1639.18
+P057,Dell USB-C Hub,Accessories,Dell,3999,4.2,16,15,599.85,3399.15
+P058,HP Laptop Backpack,Accessories,HP,2999,4.1,25,22,659.78,2339.2200000000003
+P059,Lenovo Wireless Mouse,Accessories,Lenovo,1799,4.3,33,17,305.83000000000004,1493.17
+P060,ASUS USB-C Dock,Accessories,ASUS,6999,4.4,12,13,909.87,6089.13
