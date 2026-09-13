@@ -1,0 +1,31 @@
+student_id,name,age,city,python_marks,sql_marks,pandas_marks,attendance,total_marks,average_marks
+ST001,Aarav Sharma,20,Pune,85,78,91,88,254,84.67
+ST002,Ananya Patel,21,Mumbai,92,89,95,94,276,92.0
+ST003,Rahul Verma,20,Delhi,76,81,73,79,230,76.67
+ST004,Priya Shah,22,Ahmedabad,88,91,86,92,265,88.33
+ST005,Arjun Mehta,21,Pune,67,72,69,74,208,69.33
+ST006,Diya Nair,20,Bengaluru,94,87,90,96,271,90.33
+ST007,Kabir Singh,22,Chandigarh,81,75,84,85,240,80.0
+ST008,Meera Iyer,21,Chennai,89,93,88,91,270,90.0
+ST009,Rohan Gupta,20,Jaipur,73,68,77,80,218,72.67
+ST010,Sanya Kapoor,22,Hyderabad,96,91,94,97,281,93.67
+ST011,Vikram Joshi,21,Nagpur,78,82,80,83,240,80.0
+ST012,Ishita Rao,20,Kolkata,84,79,87,89,250,83.33
+ST013,Aditya Kulkarni,22,Nashik,71,76,74,78,221,73.67
+ST014,Neha Desai,21,Surat,90,88,92,93,270,90.0
+ST015,Manav Bansal,20,Noida,86,84,81,87,251,83.67
+ST016,Tanvi Mishra,22,Lucknow,79,85,83,90,247,82.33
+ST017, Siddharth Roy,21,Kolkata,68,74,71,76,213,71.0
+ST018, Kavya Reddy,20,Hyderabad,93,90,96,95,279,93.0
+ST019, Yash Thakur,22,Indore,75,70,78,82,223,74.33
+ST020, Pooja Malhotra,21,Gurugram,87,92,89,91,268,89.33
+ST021, Nikhil Sethi,20,Amritsar,82,77,85,84,244,81.33
+ST022, Aisha Khan,22,Bhopal,91,86,93,94,270,90.0
+ST023, Varun Shetty,21,Mangaluru,69,73,67,72,209,69.67
+ST024, Riya Choudhary,20,Patna,88,80,90,86,258,86.0
+ST025, Dev Agarwal,22,Kanpur,77,83,79,81,239,79.67
+ST026, Simran Kaur,21,Ludhiana,95,94,91,98,280,93.33
+ST027, Harsh Vardhan,20,Ranchi,74,69,76,77,219,73.0
+ST028, Nandini Bose,22,Bhubaneswar,83,88,86,89,257,85.67
+ST029, Karan Malhotra,21,Thane,80,71,82,85,233,77.67
+ST030, Sneha Menon,20,Kochi,97,93,98,99,288,96.0
