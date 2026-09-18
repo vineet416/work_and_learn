@@ -8,3 +8,13 @@ pymupdf
 pygame
 opencv-python
 fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pymongo
+pymongo[srv]==3.12
+python-dotenv
+pydantic
+email-validator
+openai
+qdrant_client
