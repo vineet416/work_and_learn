@@ -20,7 +20,7 @@ class StudentPatch(BaseModel):
     name: Optional[str] = Field(default=None, min_length=2, max_length=100)
     age: Optional[int] = Field(default=None, ge=5, le=100)
     course: Optional[str] = Field(default=None, min_length=2, max_length=100)
-    email: Optional[str] = Field(default=None, min_length=5, max_length=150)
+    email: Optional[EmailStr] = Field(default=None, min_length=5, max_length=150)
     marks: Optional[float] = Field(default=None, ge=0, le=100)
 
 
