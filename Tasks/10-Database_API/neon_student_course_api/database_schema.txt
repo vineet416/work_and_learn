@@ -1,0 +1,274 @@
+-- Copy and paste this into NeonDB SQL Query Editor and run Query.
+
+
+-- ==================================================
+-- NEON POSTGRESQL DATABASE
+-- STUDENT COURSE MANAGEMENT SYSTEM
+-- ==================================================
+
+
+-- ==================================================
+-- 1. STUDENTS TABLE
+-- ==================================================
+
+CREATE TABLE IF NOT EXISTS students (
+
+    id SERIAL PRIMARY KEY,
+
+    name VARCHAR(100) NOT NULL
+        CHECK (char_length(trim(name)) >= 2),
+
+    email VARCHAR(150) NOT NULL UNIQUE,
+
+    age INTEGER NOT NULL
+        CHECK (age BETWEEN 5 AND 100),
+
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+
+);
+
+
+-- ==================================================
+-- 2. COURSES TABLE
+-- ==================================================
+
+CREATE TABLE IF NOT EXISTS courses (
+
+    id SERIAL PRIMARY KEY,
+
+    title VARCHAR(100) NOT NULL
+        CHECK (char_length(trim(title)) >= 3),
+
+    description TEXT NOT NULL
+        CHECK (char_length(trim(description)) >= 10),
+
+    price NUMERIC(10, 2) NOT NULL
+        CHECK (price > 0),
+
+    duration VARCHAR(50) NOT NULL,
+
+    instructor VARCHAR(100) NOT NULL,
+
+    category VARCHAR(50) NOT NULL,
+
+    rating NUMERIC(2, 1) NOT NULL
+        CHECK (rating BETWEEN 0 AND 5),
+
+    active BOOLEAN NOT NULL DEFAULT TRUE,
+
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+
+);
+
+
+-- ==================================================
+-- 3. ENROLLMENTS TABLE
+-- ==================================================
+
+CREATE TABLE IF NOT EXISTS enrollments (
+
+    id SERIAL PRIMARY KEY,
+
+    student_id INTEGER NOT NULL,
+
+    course_id INTEGER NOT NULL,
+
+    status VARCHAR(20) NOT NULL DEFAULT 'active'
+        CHECK (
+            status IN ('active', 'completed', 'cancelled')
+        ),
+
+    enrolled_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    CONSTRAINT fk_enrollment_student
+        FOREIGN KEY (student_id)
+        REFERENCES students(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_enrollment_course
+        FOREIGN KEY (course_id)
+        REFERENCES courses(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT uq_student_course
+        UNIQUE (student_id, course_id)
+
+);
+
+
+-- ==================================================
+-- 4. INSERT SAMPLE STUDENTS
+-- ==================================================
+
+INSERT INTO students (
+    name,
+    email,
+    age
+)
+VALUES
+(
+    'Vineet Patel',
+    'vineet@aiwithvineet.in',
+    21
+),
+(
+    'Arya Patel',
+    'arya@aiwithvineet.in',
+    20
+),
+(
+    'Diya Mehta',
+    'diya@aiwithvineet.in',
+    22
+),
+(
+    'Rohan Desai',
+    'rohan@aiwithvineet.in',
+    23
+),
+(
+    'Ananya Joshi',
+    'ananya@aiwithvineet.in',
+    21
+)
+ON CONFLICT (email) DO NOTHING;
+
+
+-- ==================================================
+-- 5. INSERT SAMPLE COURSES
+-- ==================================================
+
+INSERT INTO courses (
+    title,
+    description,
+    price,
+    duration,
+    instructor,
+    category,
+    rating,
+    active
+)
+VALUES
+(
+    'Python Programming',
+    'Learn Python programming from basics to advanced concepts.',
+    999.00,
+    '8 weeks',
+    'Rahul Sharma',
+    'python',
+    4.5,
+    TRUE
+),
+(
+    'Machine Learning',
+    'Learn machine learning algorithms and practical applications.',
+    4500.00,
+    '12 weeks',
+    'Priya Mehta',
+    'machine learning',
+    4.8,
+    TRUE
+),
+(
+    'FastAPI Development',
+    'Build REST APIs using FastAPI and Python.',
+    2500.00,
+    '6 weeks',
+    'Amit Patel',
+    'backend',
+    4.6,
+    TRUE
+),
+(
+    'Data Science with Pandas',
+    'Learn data analysis using Python Pandas library.',
+    1800.00,
+    '8 weeks',
+    'Neha Shah',
+    'data science',
+    4.4,
+    TRUE
+),
+(
+    'Web Development',
+    'Learn frontend and backend web development fundamentals.',
+    3000.00,
+    '10 weeks',
+    'Karan Joshi',
+    'web development',
+    4.2,
+    FALSE
+)
+ON CONFLICT DO NOTHING;
+
+
+-- ==================================================
+-- 6. INSERT SAMPLE ENROLLMENTS
+-- ==================================================
+
+INSERT INTO enrollments (
+    student_id,
+    course_id,
+    status
+)
+SELECT
+    s.id,
+    c.id,
+    e.status
+FROM (
+    VALUES
+        ('vineet@aiwithvineet.in', 'Python Programming', 'active'),
+        ('vineet@aiwithvineet.in', 'Machine Learning', 'active'),
+        ('arya@aiwithvineet.in', 'Python Programming', 'completed'),
+        ('diya@aiwithvineet.in', 'FastAPI Development', 'active'),
+        ('rohan@aiwithvineet.in', 'Data Science with Pandas', 'active'),
+        ('ananya@aiwithvineet.in', 'Machine Learning', 'cancelled')
+) AS e(email, title, status)
+JOIN students s
+    ON s.email = e.email
+JOIN courses c
+    ON c.title = e.title
+ON CONFLICT (student_id, course_id) DO NOTHING;
+
+
+-- ==================================================
+-- 7. VERIFY DATABASE TABLES
+-- ==================================================
+
+SELECT *
+FROM students
+ORDER BY id;
+
+
+SELECT *
+FROM courses
+ORDER BY id;
+
+
+SELECT *
+FROM enrollments
+ORDER BY id;
+
+
+-- ==================================================
+-- 8. VERIFY STUDENT-COURSE RELATIONSHIP
+-- ==================================================
+
+SELECT
+    e.id AS enrollment_id,
+    s.name AS student_name,
+    s.email AS student_email,
+    c.title AS course_title,
+    c.price AS course_price,
+    e.status AS enrollment_status,
+    e.enrolled_at
+FROM enrollments e
+JOIN students s
+    ON e.student_id = s.id
+JOIN courses c
+    ON e.course_id = c.id
+ORDER BY e.id;
