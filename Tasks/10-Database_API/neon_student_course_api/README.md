@@ -4,7 +4,7 @@ Simple FastAPI CRUD API for managing students, courses, and enrollments with Neo
 
 ## Setup
 
-1. Create a Neon PostgreSQL database and run [`database_schema.txt`](database_schema.txt).
+1. Create a Neon PostgreSQL database and copy full content of [`database_schema.txt`](database_schema.txt) and paste it into the SQL editor of your Neon database to create the necessary tables and insert sample data.
 2. Create and activate a virtual environment, then install dependencies:
 
 	```bash
