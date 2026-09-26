@@ -77,6 +77,22 @@ def complete_task(tasks):
     print("Task not found.")
 
 
+
+
+def show_summary(tasks):
+    total = len(tasks)
+    completed = sum(task["completed"] for task in tasks)
+    pending = total - completed
+
+    print("\nTask Summary")
+    print("-" * 30)
+    print(f"Total tasks: {total}")
+    print(f"Completed: {completed}")
+    print(f"Pending: {pending}")
+
+
+
+
 def main():
     tasks = load_tasks()
 
@@ -85,7 +101,8 @@ def main():
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Complete Task")
-        print("4. Exit")
+        print("4. Task Summary")
+        print("5. Exit")
 
         choice = input("Enter your choice: ").strip()
 
@@ -95,7 +112,9 @@ def main():
             view_tasks(tasks)
         elif choice == "3":
             complete_task(tasks)
-        elif choice == "4":
+        elif choice == "5":
+            show_summary(tasks)
+        elif choice == "6":
             print("Goodbye!")
             break
         else:
