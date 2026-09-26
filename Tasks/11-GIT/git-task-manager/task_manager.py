@@ -66,6 +66,23 @@ def complete_task(tasks):
     print("Task not found.")
 
 
+def delete_task(tasks):
+    try:
+        task_id = int(input("Enter task ID: "))
+    except ValueError:
+        print("Please enter a valid task ID.")
+        return
+
+    for task in tasks:
+        if task["id"] == task_id:
+            tasks.remove(task)
+            save_tasks(tasks)
+            print("Task deleted successfully.")
+            return
+
+    print("Task not found.")
+
+
 def main():
     tasks = load_tasks()
 
@@ -74,7 +91,8 @@ def main():
         print("1. Add Task")
         print("2. View Tasks")
         print("3. Complete Task")
-        print("4. Exit")
+        print("4. Delete Task")
+        print("5. Exit")
 
         choice = input("Enter your choice: ").strip()
 
@@ -85,6 +103,8 @@ def main():
         elif choice == "3":
             complete_task(tasks)
         elif choice == "4":
+            delete_task(tasks)
+        elif choice == "5":
             print("Goodbye!")
             break
         else:
