@@ -24,9 +24,16 @@ def add_task(tasks):
         print("Task title cannot be empty.")
         return
 
+    priority = input("Enter priority (low/medium/high): ").strip().lower()
+
+    if priority not in ["low", "medium", "high"]:
+        print("Invalid priority.")
+        return
+
     task = {
         "id": len(tasks) + 1,
         "title": title,
+        "priority": priority,
         "completed": False
     }
 
@@ -46,7 +53,11 @@ def view_tasks(tasks):
 
     for task in tasks:
         status = "Completed" if task["completed"] else "Pending"
-        print(f'{task["id"]}. {task["title"]} - {status}')
+        print(
+    f'{task["id"]}. {task["title"]} '
+    f'- {task["priority"]} '
+    f'- {status}'
+)
 
 
 def complete_task(tasks):
@@ -83,6 +94,22 @@ def delete_task(tasks):
     print("Task not found.")
 
 
+
+
+def show_summary(tasks):
+    total = len(tasks)
+    completed = sum(task["completed"] for task in tasks)
+    pending = total - completed
+
+    print("\nTask Summary")
+    print("-" * 30)
+    print(f"Total tasks: {total}")
+    print(f"Completed: {completed}")
+    print(f"Pending: {pending}")
+
+
+
+
 def main():
     tasks = load_tasks()
 
@@ -92,7 +119,8 @@ def main():
         print("2. View Tasks")
         print("3. Complete Task")
         print("4. Delete Task")
-        print("5. Exit")
+        print("5. Task Summary")
+        print("6. Exit")
 
         choice = input("Enter your choice: ").strip()
 
@@ -103,8 +131,6 @@ def main():
         elif choice == "3":
             complete_task(tasks)
         elif choice == "4":
-            delete_task(tasks)
-        elif choice == "5":
             print("Goodbye!")
             break
         else:

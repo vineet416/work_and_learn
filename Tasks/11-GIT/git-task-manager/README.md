@@ -2,7 +2,7 @@
 
 A small Python command-line task manager created to demonstrate
 the complete Git and GitHub workflow.
-
+ 
 ## Features
 
 - Add tasks
