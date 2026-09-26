@@ -24,9 +24,16 @@ def add_task(tasks):
         print("Task title cannot be empty.")
         return
 
+    priority = input("Enter priority (low/medium/high): ").strip().lower()
+
+    if priority not in ["low", "medium", "high"]:
+        print("Invalid priority.")
+        return
+
     task = {
         "id": len(tasks) + 1,
         "title": title,
+        "priority": priority,
         "completed": False
     }
 
@@ -46,7 +53,11 @@ def view_tasks(tasks):
 
     for task in tasks:
         status = "Completed" if task["completed"] else "Pending"
-        print(f'{task["id"]}. {task["title"]} - {status}')
+        print(
+    f'{task["id"]}. {task["title"]} '
+    f'- {task["priority"]} '
+    f'- {status}'
+)
 
 
 def complete_task(tasks):
