@@ -131,7 +131,11 @@ def main():
         elif choice == "3":
             complete_task(tasks)
         elif choice == "4":
-            print("Goodbye!")
+            delete_task(tasks)
+        elif choice == "5":
+            show_summary(tasks)
+        elif choice == "6":
+            print("Exiting the task manager. Goodbye!")
             break
         else:
             print("Invalid choice. Please try again.")
