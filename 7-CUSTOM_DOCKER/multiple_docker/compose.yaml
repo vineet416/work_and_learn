@@ -4,14 +4,18 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://myuser:mypassword@postgres:5432/mydatabasea
+      - DATABASE_URL=postgresql://myuser:mypassword@postgres:5432/mydatabase
     depends_on:
       - postgres
+
   frontend:
     build: ./frontend
     ports:
       - "3000:3000"
-
+    depends_on:
+      - backend
+      - postgres
+      
   postgres:
     image: postgres:15
     environment:
