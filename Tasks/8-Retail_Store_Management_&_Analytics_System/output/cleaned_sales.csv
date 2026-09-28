@@ -1,0 +1,51 @@
+transaction_id,product_id,product_name,category,quantity,price,customer_city,payment_method,total_amount
+1,1,Laptop,Electronics,2,65000.0,Mumbai,UPI,130000.0
+2,2,Smartphone,Electronics,3,30000.0,Pune,Credit Card,90000.0
+3,3,Headphones,Electronics,1,5000.0,Bangalore,Debit Card,5000.0
+4,4,Smart Watch,Electronics,2,25000.0,Delhi,Cash,50000.0
+5,5,Tablet,Electronics,4,22000.0,Hyderabad,UPI,88000.0
+6,1,Laptop,Electronics,1,65000.0,Mumbai,Credit Card,65000.0
+7,2,Smartphone,Electronics,2,30000.0,Pune,Debit Card,60000.0
+8,6,Keyboard,Electronics,3,2500.0,Bangalore,Cash,7500.0
+9,7,Mouse,Electronics,2,1200.0,Delhi,UPI,2400.0
+10,8,Monitor,Electronics,1,18000.0,Hyderabad,Credit Card,18000.0
+11,9,Printer,Electronics,2,15000.0,Mumbai,Debit Card,30000.0
+12,10,Camera,Electronics,1,45000.0,Pune,Cash,45000.0
+13,11,T-Shirt,Clothing,3,1800.0,Bangalore,UPI,5400.0
+14,12,Jeans,Clothing,2,3500.0,Delhi,Credit Card,7000.0
+15,13,Jacket,Clothing,1,4500.0,Hyderabad,Debit Card,4500.0
+16,14,Hoodie,Clothing,2,3000.0,Mumbai,Cash,6000.0
+17,15,Sneakers,Clothing,3,5500.0,Pune,UPI,16500.0
+18,16,Formal Shirt,Clothing,2,2500.0,Bangalore,Credit Card,5000.0
+19,17,Shorts,Clothing,1,1800.0,Delhi,Debit Card,1800.0
+20,18,Sweater,Clothing,2,2800.0,Hyderabad,Cash,5600.0
+21,19,Track Pants,Clothing,3,2200.0,Mumbai,UPI,6600.0
+22,20,Cap,Clothing,2,900.0,Pune,Credit Card,1800.0
+23,21,Python Programming,Books,1,1200.0,Bangalore,Debit Card,1200.0
+24,22,Data Science Basics,Books,2,1800.0,Delhi,Cash,3600.0
+25,23,Machine Learning,Books,3,2200.0,Hyderabad,UPI,6600.0
+26,24,Web Development,Books,1,1500.0,Mumbai,Credit Card,1500.0
+27,25,Artificial Intelligence,Books,2,2000.0,Pune,Debit Card,4000.0
+28,26,Clean Code,Books,2,1600.0,Bangalore,Cash,3200.0
+29,27,Python Cookbook,Books,1,1900.0,Delhi,UPI,1900.0
+30,28,Deep Learning,Books,2,2500.0,Hyderabad,Credit Card,5000.0
+31,29,SQL Fundamentals,Books,3,1300.0,Mumbai,Debit Card,3900.0
+32,30,Statistics Guide,Books,4,1100.0,Pune,Cash,4400.0
+33,1,Laptop,Electronics,2,65000.0,Bangalore,UPI,130000.0
+34,2,Smartphone,Electronics,1,30000.0,Delhi,Credit Card,30000.0
+35,3,Headphones,Electronics,3,5000.0,Hyderabad,Debit Card,15000.0
+36,4,Smart Watch,Electronics,2,25000.0,Mumbai,Cash,50000.0
+37,5,Tablet,Electronics,1,22000.0,Pune,UPI,22000.0
+38,6,Keyboard,Electronics,2,2500.0,Bangalore,Credit Card,5000.0
+39,7,Mouse,Electronics,3,1200.0,Delhi,Debit Card,3600.0
+40,8,Monitor,Electronics,2,18000.0,Hyderabad,Cash,36000.0
+41,9,Printer,Electronics,1,15000.0,Mumbai,UPI,15000.0
+42,10,Camera,Electronics,2,45000.0,Pune,Credit Card,90000.0
+43,11,T-Shirt,Clothing,3,1800.0,Bangalore,Debit Card,5400.0
+44,12,Jeans,Clothing,2,3500.0,Delhi,Cash,7000.0
+45,13,Jacket,Clothing,1,4500.0,Hyderabad,UPI,4500.0
+46,14,Hoodie,Clothing,3,3000.0,Mumbai,Credit Card,9000.0
+47,15,Sneakers,Clothing,2,5500.0,Pune,Debit Card,11000.0
+48,16,Formal Shirt,Clothing,1,2500.0,Bangalore,Cash,2500.0
+49,17,Shorts,Clothing,2,1800.0,Delhi,UPI,3600.0
+50,18,Sweater,Clothing,3,2800.0,Hyderabad,Credit Card,8400.0

@@ -1,0 +1,32 @@
+product_id,name,brand,price,stock,category
+1,Laptop,Dell,65000,8,Electronics
+2,Smartphone,Samsung,30000,15,Electronics
+3,Headphones,Sony,5000,7,Electronics
+4,Smart Watch,Apple,25000,12,Electronics
+5,Tablet,Lenovo,22000,6,Electronics
+6,Keyboard,Logitech,2500,20,Electronics
+7,Mouse,Logitech,1200,25,Electronics
+8,Monitor,LG,18000,9,Electronics
+9,Printer,HP,15000,11,Electronics
+10,Camera,Canon,45000,5,Electronics
+11,T-Shirt,Nike,1800,30,Clothing
+12,Jeans,Levis,3500,18,Clothing
+13,Jacket,Puma,4500,8,Clothing
+14,Hoodie,Adidas,3000,14,Clothing
+15,Sneakers,Nike,5500,10,Clothing
+16,Formal Shirt,Van Heusen,2500,22,Clothing
+17,Shorts,Puma,1800,16,Clothing
+18,Sweater,H&M,2800,7,Clothing
+19,Track Pants,Adidas,2200,13,Clothing
+20,Cap,Nike,900,20,Clothing
+21,Python Programming,Pearson,1200,9,Books
+22,Data Science Basics,O'Reilly,1800,12,Books
+23,Machine Learning,Springer,2200,5,Books
+24,Web Development,Packt,1500,17,Books
+25,Artificial Intelligence,Pearson,2000,8,Books
+26,Clean Code,Prentice Hall,1600,11,Books
+27,Python Cookbook,O'Reilly,1900,6,Books
+28,Deep Learning,MIT Press,2500,10,Books
+29,SQL Fundamentals,McGraw Hill,1300,15,Books
+30,Statistics Guide,Pearson,1100,7,Books
+31,USB Drive,SanDisk,800,25,Electronics

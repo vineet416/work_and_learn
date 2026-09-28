@@ -1,0 +1,32 @@
+product_id,name,brand,price,stock,category,quantity_sold,revenue
+1,Laptop,Dell,65000,8,Electronics,5.0,325000.0
+2,Smartphone,Samsung,30000,15,Electronics,6.0,180000.0
+3,Headphones,Sony,5000,7,Electronics,4.0,20000.0
+4,Smart Watch,Apple,25000,12,Electronics,4.0,100000.0
+5,Tablet,Lenovo,22000,6,Electronics,5.0,110000.0
+6,Keyboard,Logitech,2500,20,Electronics,5.0,12500.0
+7,Mouse,Logitech,1200,25,Electronics,5.0,6000.0
+8,Monitor,LG,18000,9,Electronics,3.0,54000.0
+9,Printer,HP,15000,11,Electronics,3.0,45000.0
+10,Camera,Canon,45000,5,Electronics,3.0,135000.0
+11,T-Shirt,Nike,1800,30,Clothing,6.0,10800.0
+12,Jeans,Levis,3500,18,Clothing,4.0,14000.0
+13,Jacket,Puma,4500,8,Clothing,2.0,9000.0
+14,Hoodie,Adidas,3000,14,Clothing,5.0,15000.0
+15,Sneakers,Nike,5500,10,Clothing,5.0,27500.0
+16,Formal Shirt,Van Heusen,2500,22,Clothing,3.0,7500.0
+17,Shorts,Puma,1800,16,Clothing,3.0,5400.0
+18,Sweater,H&M,2800,7,Clothing,5.0,14000.0
+19,Track Pants,Adidas,2200,13,Clothing,3.0,6600.0
+20,Cap,Nike,900,20,Clothing,2.0,1800.0
+21,Python Programming,Pearson,1200,9,Books,1.0,1200.0
+22,Data Science Basics,O'Reilly,1800,12,Books,2.0,3600.0
+23,Machine Learning,Springer,2200,5,Books,3.0,6600.0
+24,Web Development,Packt,1500,17,Books,1.0,1500.0
+25,Artificial Intelligence,Pearson,2000,8,Books,2.0,4000.0
+26,Clean Code,Prentice Hall,1600,11,Books,2.0,3200.0
+27,Python Cookbook,O'Reilly,1900,6,Books,1.0,1900.0
+28,Deep Learning,MIT Press,2500,10,Books,2.0,5000.0
+29,SQL Fundamentals,McGraw Hill,1300,15,Books,3.0,3900.0
+30,Statistics Guide,Pearson,1100,7,Books,4.0,4400.0
+31,USB Drive,SanDisk,800,25,Electronics,0.0,0.0

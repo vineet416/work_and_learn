@@ -1,0 +1,67 @@
+
+RETAIL STORE SALES REPORT
+Total Transactions: 50
+Total Quantity Sold: 102
+Total Revenue: ₹1134400.00
+Average Transaction Value: ₹22688.00
+Highest-Value Transaction: ₹130000.00
+Lowest-Value Transaction: ₹1200.00
+Best Selling Product: Smartphone
+Best Selling Product Quantity: 6
+Lowest Selling Product: Python Programming
+Lowest Selling Product Quantity: 1
+Highest Revenue Category: Electronics
+Highest Revenue Category Amount: ₹987500.00
+Highest Revenue City: Pune
+Highest Revenue City Amount: ₹344700.00
+Average Product Price: ₹8874.19
+Maximum Product Price: ₹65000.00
+Minimum Product Price: ₹800.00
+
+PAYMENT-METHOD DISTRIBUTION
+payment_method  transaction_count
+           UPI                 13
+   Credit Card                 13
+    Debit Card                 12
+          Cash                 12
+
+TOP 5 PRODUCTS
+ product_id product_name  quantity
+          2   Smartphone         6
+         11      T-Shirt         6
+          6     Keyboard         5
+          5       Tablet         5
+          7        Mouse         5
+
+BOTTOM 5 PRODUCTS
+ product_id       product_name  quantity
+         21 Python Programming         1
+         27    Python Cookbook         1
+         24    Web Development         1
+         13             Jacket         2
+         20                Cap         2
+
+PRODUCTS WITH STOCK BELOW 10
+ product_id                    name  stock
+          1                  Laptop      8
+          3              Headphones      7
+          5                  Tablet      6
+          8                 Monitor      9
+         10                  Camera      5
+         13                  Jacket      8
+         18                 Sweater      7
+         21      Python Programming      9
+         23        Machine Learning      5
+         25 Artificial Intelligence      8
+         27         Python Cookbook      6
+         30        Statistics Guide      7
+
+PRODUCTS PRICED ABOVE AVERAGE
+ product_id        name  price
+          1      Laptop  65000
+          2  Smartphone  30000
+          4 Smart Watch  25000
+          5      Tablet  22000
+          8     Monitor  18000
+          9     Printer  15000
+         10      Camera  45000
