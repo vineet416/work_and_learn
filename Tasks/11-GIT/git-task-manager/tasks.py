@@ -11,3 +11,8 @@ def add_priority(task, priority):
 
 def add_status(task, status):
     return f"{task} - Status: {status}"
+
+def remove_task(tasks, task):
+    if task in tasks:
+        tasks.remove(task)
+        print(f"Removed: {task}")
