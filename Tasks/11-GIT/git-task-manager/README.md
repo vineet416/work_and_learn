@@ -1,23 +1,13 @@
 # Git Task Manager
 
-A small Python command-line task manager created to demonstrate
-the complete Git and GitHub workflow.
- 
+A simple beginner-friendly Python Task Manager created to demonstrate a complete Git and GitHub workflow.
+
 ## Features
 
 - Add tasks
-- View tasks
-- Mark tasks as completed
-- Store tasks in JSON
-- Demonstrate Git branching and merging
+- Display tasks
 
-## Technologies
-
-- Python
-- Git
-- GitHub
-
-## Run the project
+## Run
 
 ```bash
-python task_manager.py
+python main.py
