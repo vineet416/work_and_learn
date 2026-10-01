@@ -8,3 +8,6 @@ def show_tasks(tasks):
 
 def add_priority(task, priority):
     return f"[{priority}] {task}"
+
+def add_status(task, status):
+    return f"{task} - Status: {status}"
