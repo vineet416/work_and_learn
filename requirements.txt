@@ -20,3 +20,4 @@ openai
 qdrant_client
 neo4j
 mcp
+supabase
