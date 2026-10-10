@@ -21,3 +21,4 @@ qdrant_client
 neo4j
 mcp
 supabase
+slowapi # rate limiting
