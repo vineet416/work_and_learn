@@ -30,15 +30,83 @@ def filter_by_age(age: int):
 
 
 
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 class Student(BaseModel):
-    name: str
-    email: EmailStr
-    age: int
-    course: str
+    name: str = Field(min_length=5, max_length=50)
+    email: EmailStr 
+    age: int = Field(ge=18, le=100)
+    course: str = Field(min_length=3, max_length=50)
 
 
 @app.post("/students")
 def insert_student(student: Student):
     response = client.table("students").insert(student.model_dump()).execute()
     return response.data
+
+
+
+class StudentUpdate(BaseModel):
+    name: str = Field(min_length=5, max_length=50)
+    email: EmailStr 
+    age: int = Field(ge=18, le=100)
+    course: str = Field(min_length=3, max_length=50)
+
+
+@app.put("/students/update/{student_id}")
+def update_student(student_id: int, student: StudentUpdate):
+    response = client.table("students").update(student.model_dump()).eq("id", student_id).execute()
+    return response.data
+
+
+
+class studetnpatch(BaseModel):
+    name: str | None = Field(default=None, min_length=5 , max_length=100)
+    email : EmailStr | None = Field(default=None)
+    age: int | None = Field(default=None, ge=18 , le=100)
+    course: str | None = Field(default=None)
+
+
+@app.patch("/students/patch/{student_id}")
+def student_patch(student_id: int, student: studetnpatch):
+    response = client.table("students").update(student.model_dump(exclude_unset=True)).eq("id", student_id).execute()
+    return response.data
+
+
+
+
+@app.delete("/students/delete/{student_id}")
+def delete_student(student_id: int):
+    response = client.table("students").delete().eq("id", student_id).execute()
+    return response.data
+
+
+
+# Rate Limiting
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from fastapi import Request
+
+limiter = Limiter(key_func=get_remote_address)
+
+@app.get("/studentslimit")
+@limiter.limit("5/minute")
+def get_students_limited(request: Request):
+    response = client.table("students").select("*").execute()
+    return response.data
+
+
+# CORS - Cross-Origin Resource Sharing
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:8000", "http://127.0.0.1:8000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/test-cors")
+def test_cors():
+    return {"message": "CORS is working!"}
