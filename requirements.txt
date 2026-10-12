@@ -22,3 +22,5 @@ neo4j
 mcp
 supabase
 slowapi # rate limiting
+bcrypt # password hashing
+pwdlib[argon2] # password hashing
