@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 28px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 14px;
+        }
+
+        label { display: block; font-weight: bold; }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            margin-top: 7px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 14px;
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+            color: white;
+            background: #2563eb;
+            margin: 4px 3px 4px 0;
+        }
+
+        .delete { background: #dc2626; }
+        .edit { background: #475569; }
+        .secondary { background: #64748b; }
+
+        .actions { margin-top: 16px; }
+
+        .search-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .search-row input { flex: 1; min-width: 180px; }
+
+        #message { margin: 12px 0; }
+        .error { color: #b91c1c; }
+        .success { color: #047857; }
+
+        .table-wrap { overflow-x: auto; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th { background: #eff6ff; }
+
+        @media (max-width: 600px) {
+            header { padding: 18px 10px; }
+            .card { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+        <p>Docker Compose · FastAPI · PostgreSQL</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 id="form-title">Add Student</h2>
+
+            <form id="student-form">
+                <div class="form-grid">
+                    <label>
+                        Full name
+                        <input id="name" required maxlength="100"
+                               placeholder="Aarav Patel">
+                    </label>
+
+                    <label>
+                        Email
+                        <input id="email" type="email" required maxlength="150"
+                               placeholder="aarav@example.com">
+                    </label>
+
+                    <label>
+                        Course
+                        <input id="course" required maxlength="100"
+                               placeholder="Python">
+                    </label>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" id="save-button">Add Student</button>
+                    <button type="button" class="secondary"
+                            id="cancel-button" hidden>Cancel Edit</button>
+                </div>
+            </form>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+            <h2>Students</h2>
+
+            <div class="search-row">
+                <input id="search" placeholder="Search by name, email or course">
+                <button type="button" id="search-button">Search</button>
+                <button type="button" class="secondary" id="reset-button">
+                    Show All
+                </button>
+            </div>
+
+            <p id="count">Loading students...</p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const API_URL = "/api/students";
+
+        const form = document.getElementById("student-form");
+        const message = document.getElementById("message");
+        const list = document.getElementById("student-list");
+
+        let editingId = null;
+        let students = [];
+
+        async function request(url, options = {}) {
+            const response = await fetch(url, options);
+            const data = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+                throw new Error(
+                    typeof data.detail === "string"
+                        ? data.detail
+                        : "Request failed. Please try again."
+                );
+            }
+
+            return data;
+        }
+
+        function showMessage(text, isError = false) {
+            message.textContent = text;
+            message.className = isError ? "error" : "success";
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>"']/g, char => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;"
+            })[char]);
+        }
+
+        async function loadStudents(search = "") {
+            try {
+                const query = search.trim()
+                    ? `?search=${encodeURIComponent(search.trim())}`
+                    : "";
+
+                students = await request(`${API_URL}${query}`);
+
+                list.innerHTML = students.map(student => `
+                    <tr>
+                        <td>${student.id}</td>
+                        <td>${escapeHtml(student.name)}</td>
+                        <td>${escapeHtml(student.email)}</td>
+                        <td>${escapeHtml(student.course)}</td>
+                        <td>
+                            <button class="edit"
+                                data-action="edit"
+                                data-id="${student.id}">Edit</button>
+                            <button class="delete"
+                                data-action="delete"
+                                data-id="${student.id}">Delete</button>
+                        </td>
+                    </tr>
+                `).join("");
+
+                document.getElementById("count").textContent =
+                    `${students.length} student(s) found.`;
+            } catch (error) {
+                showMessage(error.message, true);
+                document.getElementById("count").textContent =
+                    "Unable to load students.";
+            }
+        }
+
+        form.addEventListener("submit", async event => {
+            event.preventDefault();
+
+            const student = {
+                name: document.getElementById("name").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                course: document.getElementById("course").value.trim()
+            };
+
+            try {
+                if (editingId === null) {
+                    await request(API_URL, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(student)
+                    });
+                    showMessage("Student added successfully.");
+                } else {
+                    await request(`${API_URL}/${editingId}`, {
+                        method: "PUT",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(student)
+                    });
+                    showMessage("Student updated successfully.");
+                }
+
+                resetForm();
+                await loadStudents(document.getElementById("search").value);
+            } catch (error) {
+                showMessage(error.message, true);
+            }
+        });
+
+        list.addEventListener("click", async event => {
+            const button = event.target.closest("button[data-action]");
+            if (!button) return;
+
+            const id = Number(button.dataset.id);
+            const student = students.find(item => item.id === id);
+
+            if (!student) return;
+
+            if (button.dataset.action === "edit") {
+                editingId = id;
+                document.getElementById("name").value = student.name;
+                document.getElementById("email").value = student.email;
+                document.getElementById("course").value = student.course;
+                document.getElementById("form-title").textContent = "Edit Student";
+                document.getElementById("save-button").textContent = "Save Changes";
+                document.getElementById("cancel-button").hidden = false;
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                return;
+            }
+
+            if (button.dataset.action === "delete") {
+                if (!confirm(`Delete ${student.name}?`)) return;
+
+                try {
+                    await request(`${API_URL}/${id}`, { method: "DELETE" });
+                    showMessage("Student deleted successfully.");
+                    await loadStudents(document.getElementById("search").value);
+
+                    if (editingId === id) resetForm();
+                } catch (error) {
+                    showMessage(error.message, true);
+                }
+            }
+        });
+
+        function resetForm() {
+            form.reset();
+            editingId = null;
+            document.getElementById("form-title").textContent = "Add Student";
+            document.getElementById("save-button").textContent = "Add Student";
+            document.getElementById("cancel-button").hidden = true;
+        }
+
+        document.getElementById("cancel-button").addEventListener("click", resetForm);
+
+        document.getElementById("search-button").addEventListener("click", () => {
+            loadStudents(document.getElementById("search").value);
+        });
+
+        document.getElementById("search").addEventListener("keydown", event => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                loadStudents(event.target.value);
+            }
+        });
+
+        document.getElementById("reset-button").addEventListener("click", () => {
+            document.getElementById("search").value = "";
+            loadStudents();
+        });
+
+        loadStudents();
+    </script>
+</body>
+</html>
