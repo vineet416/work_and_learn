@@ -18,3 +18,18 @@ def log_transaction(transaction_type: str, account_number: int, amount: float, s
                 log_file.write(f"Transfer: Account {account_number}, To Account: {to_account}, Amount: {amount}, Status: {status}\n")
     except Exception as e:
         logging.error(f"Error occurred while logging transaction: {e}")
+
+
+def read_transaction_history() -> list:
+    try:
+        logging.info("Reading transaction history.")
+        with open("transactions.txt", "r") as log_file:
+            transactions = log_file.readlines()
+        logging.info(f"Total transactions found: {len(transactions)}")
+        return transactions
+    except FileNotFoundError:
+        logging.warning("transactions.txt not found. No transactions yet.")
+        return []
+    except Exception as e:
+        logging.error(f"Error occurred while reading transaction history: {e}")
+        return []
